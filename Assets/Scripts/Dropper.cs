@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
-    [SerializeField] int timeToWait = 3;
+    [SerializeField] float timeToWait = 3f;
 
     // Update is called once per frame
     void Update()
