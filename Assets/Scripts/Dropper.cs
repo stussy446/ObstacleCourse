@@ -6,8 +6,6 @@ public class Dropper : MonoBehaviour
 {
     [SerializeField] float timeToWait = 3f;
 
-    // fake update 
-
     // Update is called once per frame
     void Update()
     {
