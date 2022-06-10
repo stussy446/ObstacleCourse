@@ -16,8 +16,12 @@ public class ObjectHit : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        mesh = GetComponent<MeshRenderer>();
-        mesh.material.color = Color.green;
+        if (collision.gameObject.CompareTag("Player") && gameObject.tag != "hit")
+        {
+            mesh = GetComponent<MeshRenderer>();
+            mesh.material.color = Color.green;
+            gameObject.tag = "hit";
+        }
     }
 
     private void OnCollisionExit(Collision collision)
